@@ -1,0 +1,35 @@
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="manage_odoo.employee_tree">
+            <field name="name">manage_odoo employee tree</field>
+            <field name="model">manage_odoo.employee</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="rol"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="manage_odoo.employee_form">
+            <field name="name">manage_odoo employee form</field>
+            <field name="model">manage_odoo.employee</field>
+            <field name="arch" type="xml">
+                <form>
+                    <field name="name"/>
+                    <field name="rol" required="1"/>
+                    <field name="task_id"/>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="manage_odoo.action_employee_window">
+            <field name="name">manage_odoo employee window</field>
+            <field name="res_model">manage_odoo.employee</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem name="Employees" id="manage_odoo.menu_1_employee_list" parent="manage_odoo.menu_1" action="manage_odoo.action_employee_window"/>
+    </data>
+</odoo>

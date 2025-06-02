@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_manage_history,manage_odoo.history,model_manage_odoo_history,base.group_user,1,1,1,1
+access_manage_project,manage_odoo.project,model_manage_odoo_project,base.group_user,1,1,1,1
+access_manage_sprint,manage_odoo.sprint,model_manage_odoo_sprint,base.group_user,1,1,1,1
+access_manage_task,manage_odoo.task,model_manage_odoo_task,base.group_user,1,1,1,1
+access_manage_technology,manage_odoo.technology,model_manage_odoo_technology,base.group_user,1,1,1,1
+access_manage_employee,manage_odoo.employee,model_manage_odoo_employee,base.group_user,1,1,1,1
